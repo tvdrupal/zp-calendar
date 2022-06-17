@@ -21,17 +21,26 @@ yarn add zp-calendar
 
 ---------
  <div class="zbox" style="width: 450px; height: 400px">
+ 
           <zp-calendar showlunar @dayMsg="getDayMsg"></zp-calendar>
+ 
         </div>
 
 
 import zpCalendar from 'zp-calendar'
+
 export default {
+
   components: { zpCalendar },
+  
   ....
   
    methods: {
+   
+   
     getDayMsg(day) {
+    
       console.log('日期信息', day)
+      
     },
     
